@@ -1,0 +1,4 @@
+.nav-button {
+	display: block; /* ブロック要素として表示 */
+	margin-bottom: 10px; /* ボタンの下にマージンを追加 */
+}
