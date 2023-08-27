@@ -1,17 +1,6 @@
-//import 'aframe';
-import React, { useEffect } from 'react';
+import 'aframe';
 
 function AframePage() {
-	useEffect(() => {
-		const script = document.createElement('script');
-		script.src = "https://aframe.io/releases/1.3.0/aframe.min.js";
-		document.head.appendChild(script);
-
-		return () => {
-			document.head.removeChild(script);
-		};
-	}, []);
-
 	return (
 		<div className="App">
 			<a-scene>

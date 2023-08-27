@@ -1,21 +1,6 @@
 import { Entity, Scene } from 'aframe-react';
-import React, { useEffect } from 'react';
 
 function AFrameReactPage() {
-	useEffect(() => {
-		const script1 = document.createElement('script');
-		script1.src = "https://aframe.io/releases/1.3.0/aframe.min.js";
-		document.head.appendChild(script1);
-
-		const script2 = document.createElement('script');
-		script2.src = "https://npmcdn.com/aframe-react@<YOUR_AFRAME_REACT_VERSION>"; // <YOUR_AFRAME_REACT_VERSION>を適切なバージョンに置き換えてください
-		document.head.appendChild(script2);
-
-		return () => {
-			document.head.removeChild(script1);
-			document.head.removeChild(script2);
-		};
-	}, []);
 	return (
 		<Scene>
 			<Entity
